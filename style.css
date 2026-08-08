@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-.hi {
-    font-family: Montserrat;
+:root {
+  --orange-color: #FF6E1D;
+  --black-color: #111111;
+  --text-color: #666666;
+  --light-color: #FFFFFF;
+}
+body {
+  background-color: var(--light-color);
+  color: var(--text-color);
+}
+.logo {
+    padding-left: 140px;
+    padding-right: 200px;
+}
+.navbar a{
+  font-family: Montserrat;
+  text-decoration: none;
+  color: #666666;
+  font-size: 14px;
+  gap: 10px;
+  padding-right: 5px;
+}
+.navbar a:hover{
+    color: var(--orange-color);
+}
+.mainbtn{
+   font-family: Montserrat;
+  background-color: var(--orange-color);
+   color: var(--light-color);
+   border-radius: 4px;
+   font-size: 13px;
+   font-weight: 500;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+.mainbtn:hover{
+   background-color: var(--light-color);
+   color: var(--orange-color);
+   border: 1px solid #FF6E1D;
+   transition: 0.5s;
 }
