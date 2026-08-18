@@ -9,6 +9,7 @@ body{
    background-color: var(--light-color);
    color: var(--text-color);
 }
+/* Navbar */
 .navbar{
    height: 80px;
    display: flex;
@@ -34,7 +35,6 @@ body{
 }
 .content a:hover{
    color: var(--orange-color);
-   font-weight: 500;
 }
 .mainbtn{
    padding-right:250px;
@@ -48,10 +48,83 @@ body{
    text-decoration: none;
    transition: .3s;
    font-weight: 500;
+   border: 1px solid transparent;
 }
 .main:hover{
    background-color: var(--light-color);
    border: 1px solid #FF6E1D;
-   font-weight: 500;
    color: var(--orange-color);
+}
+/* Hero section */
+.hero-sec{
+   position: relative;
+}
+.hero-con{
+   width: 50%;
+   padding-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding-right: 50px;
+   overflow: hidden;
+   position: relative;
+   z-index: 10;
+}
+.hero-con p{
+   font-family: Montserrat;
+   padding-left: 60px;
+}
+.book-btn{
+   padding-right: 250px;
+}
+.lg-btn{
+   border-radius: 5px;
+   padding:16px 35px;
+   background-color: var(--orange-color);
+   color: var(--light-color);
+   font-family: Montserrat;
+   transition: .3s;
+   font-weight: 500;
+   border: 1px solid transparent;
+}
+.lg-btn:hover{
+   background-color: var(--light-color);
+   border: 1px solid #FF6E1D;
+   color: var(--orange-color);
+}
+#carimg{
+   position: absolute;
+   right: 0;
+   bottom: 0px;
+   width: 700px;
+   z-index: 3;
+   transition: .5s;
+}
+.shape{
+   position: absolute;
+   left: 0;
+   bottom: -120px;
+   width: 100%;
+   z-index: 2;
+}
+.dots{
+   margin-top: 10px;
+   display: flex;
+   gap: 10px;
+   padding-right:320px ;
+}
+.dot{
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   background-color: var(--orange-color);
+   border: 1px solid transparent;
+}
+.dot:active{
+   background-color: var(--light-color);
+   border: 2px solid #FF6E1D;
+   width: 10px;
+   height: 10px;
 }
