@@ -58,6 +58,7 @@ body{
 /* Hero section */
 .hero-sec{
    position: relative;
+   height: 70vh;
 }
 .hero-con{
    width: 50%;
@@ -127,4 +128,17 @@ body{
    border: 2px solid #FF6E1D;
    width: 10px;
    height: 10px;
+}
+.header{
+   margin-top: 200px;
+}
+.box{
+   width: 70px;
+   height: 70px;
+}
+.box:hover{
+   background-color: var(--orange-color);
+}
+.box:hover img{
+   filter: brightness(0) invert(1);
 }

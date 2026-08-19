@@ -40,3 +40,33 @@ buttons.forEach(function(btn, index){
         timer = setInterval(autoplay, 3000);
     });
 });
+
+document.getElementById("cardrow");
+cards=[
+    {
+        image:"assets/Group (1).png",
+        heading:"assets/No Delays (1).png",
+        para:"Lorem Ipsum has been the industry's <br> standard dummy text ever since."
+    },
+    {
+        image:"assets/Group (1).png",
+        heading:"assets/Diverse Selection (3).png",
+        para:"Lorem Ipsum has been the industry's <br> standard dummy text ever since."
+    },
+    {
+        image:"assets/Group (1).png",
+        heading:"assets/Best Prices (6).png",
+        para:"Lorem Ipsum has been the industry's <br> standard dummy text ever since."
+    }
+]
+
+for(let i=0;i<cards.length;i++){
+    cardrow.innerHTML+=`<div class="col-4 flex flex-col justify-center items-center text-center gap-3">
+                <div class="box flex justify-center items-center text-center">
+                    <img src="${cards[i].image}" class="myimg" alt="" width="50px">
+                </div>
+                <img src="${cards[i].heading}" alt="">
+                <p class="text-gray-600 text-sm">"${cards[i].para}</p>
+            </div>
+    `
+}
