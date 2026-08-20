@@ -9,6 +9,10 @@ body{
    background-color: var(--light-color);
    color: var(--text-color);
 }
+p{
+   font-family: Montserrat;
+   color: var(--text-color);
+}
 /* Navbar */
 .navbar{
    height: 80px;
@@ -129,6 +133,7 @@ body{
    width: 10px;
    height: 10px;
 }
+/* Small Cards Section */
 .header{
    margin-top: 200px;
 }
@@ -141,4 +146,38 @@ body{
 }
 .box:hover img{
    filter: brightness(0) invert(1);
+}
+/* Car Section */
+.car-btn{
+   padding-right: 320px;
+}
+.c-btn{
+   border-radius: 5px;
+   padding:16px 35px;
+   background-color: var(--orange-color);
+   color: var(--light-color);
+   font-family: Montserrat;
+   transition: .3s;
+   font-weight: 500;
+   border: 1px solid transparent;
+}
+.c-btn:hover{
+   background-color: var(--light-color);
+   border: 1px solid #FF6E1D;
+   color: var(--orange-color);
+}
+.car-fade{
+   opacity: 0;
+   animation: fadeInLeft 1s ease forwards;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
