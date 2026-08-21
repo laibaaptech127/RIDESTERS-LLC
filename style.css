@@ -181,3 +181,23 @@ p{
         transform: translateX(0);
     }
 }
+/* Logo Section */
+.main-slider{
+   overflow: hidden;
+   width: 100%;
+   padding: 20px 0px;
+}
+.slider{
+  width: calc(200px * 12);
+  animation: scroll 15s linear infinite;
+}
+.slider img {
+  height: auto;
+  object-fit: contain;
+  padding: 10px 45px; 
+  flex-shrink: 0;
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
