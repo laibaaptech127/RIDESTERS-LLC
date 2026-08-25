@@ -1,3 +1,4 @@
+// Hero Section
 let carImages = [
     "assets/car rental1.png",
     "assets/car rental2.png",
@@ -40,6 +41,7 @@ buttons.forEach(function(btn, index){
         timer = setInterval(autoplay, 3000);
     });
 });
+// Small Card Section
 
 document.getElementById("cardrow");
 cards=[
@@ -136,3 +138,36 @@ for(let i=0;i<Carcards.length;i++){
                 </div>
             </div>`
 }
+
+// Visitor Section
+let visitorcards =[
+    {
+        visitor:"assets/visitor1.png",
+        header:"cHris t.",
+    },
+    {
+        visitor:"assets/visitor2.png",
+        header:"Adelia Z.",
+    },
+    {
+        visitor:"assets/visitor3.png",
+        header:"Alec O.",
+    }
+]
+let Visitors = document.getElementById("Visitors");
+for(let i=0;i<visitorcards.length;i++){
+    Visitors.innerHTML+=`<div class="col-4 flex flex-col justify-center algn-center gap-3" id="main">
+                <div class="div1 flex flex-col justify-start algn-start gap-2">
+                    <img src="assets/Vector (1).png" alt="" width="50px" class="vector">
+                    <p class="text-sm">The point of using Lorem Ipsum is <br>that it has a more-or-less normal <br>distribution of letters, as opposed to <br>using 'Content here, content here.</p>
+                    <div class="main-div1 flex justify-start algn-start gap-2">
+                        <div class="visit"><img src="${visitorcards[i].visitor}" alt="" width="50px"></div>
+                        <div class="visit-con flex flex-col gap-0">
+                            <h5>${visitorcards[i].header}</h5>
+                            <p class="text-sm">Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+}
+

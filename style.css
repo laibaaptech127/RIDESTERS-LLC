@@ -176,7 +176,7 @@ h1,h2,h3,h4,h5{
 .car-btn{
    padding-right: 320px;
 }
-.c-btn{
+.c-btn{ 
    border-radius: 5px;
    padding:16px 35px;
    background-color: var(--orange-color);
@@ -322,4 +322,35 @@ h1,h2,h3,h4,h5{
 }
 .banner-img{
    padding-left: 160px;
+}
+/* Vistors Section */
+.header1{
+   padding-top: 50px;
+}
+.head3 h1{
+   font-size: 35px;
+}
+.visit-con h5{
+   font-size: 15px;
+}
+.vector{
+   filter: grayscale(100%);
+   transition: 0.3s ease; 
+}
+.div1:hover img.vector{
+   filter: none;
+}
+.div1:hover h5{
+   color: var(--orange-color);
+}
+#main{
+   background-color: #FFFFFF;
+   padding: 20px;
+   width: 320px;
+   height: 250px;
+   border-radius: 5px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.div1{
+   padding: 10px;
 }
